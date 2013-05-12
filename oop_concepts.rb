@@ -29,6 +29,10 @@ class Base
 		def name=(name)
 			@name=name
 		end 
+
+		def id
+			@id
+		end 
 end 
 
 class FirstChild < Base
@@ -56,11 +60,11 @@ end
 
 if __FILE__ == $0
 
-	fChild = FirstChild.new(5,"Pratik",100)
+	fChild = FirstChild.new(5,"Pratik")
 	fChild.show
 
 	fChild.name="Krishnarpita"
 	fChild.show
-	fChild.getSocial
+	print fChild.id
 
 end 

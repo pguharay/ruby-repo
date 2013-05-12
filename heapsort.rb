@@ -54,7 +54,7 @@ end
 
 if __FILE__ == $0
 	
-	array = [5,3,4,8,9,2,6,7,1]
+	array = [5,3,4,8,9,2,6,7,1,10]
 	heapsort(array)
 	$logger.debug("Sorted sequence is [ " + String(array.join(',')) + " ]")
 

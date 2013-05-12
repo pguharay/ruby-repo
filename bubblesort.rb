@@ -4,7 +4,7 @@ require 'sort_util'
 
 def bubblesort(array)
 	for i in (array.size-1).downto(0)
-		for j in 0 .. i
+		for j in 0 .. i-1
 			if(array[j].to_i > array[j+1].to_i)
 				swap_elements(array,j,j+1)
 			end 
