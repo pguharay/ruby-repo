@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby -wKU
 
-require 'sort_util'
+require_relative 'sort_util'
 
 def countingsort(array)
 	countArray = Array.new(9,0);
@@ -8,7 +8,7 @@ def countingsort(array)
 
 
 	(0 .. array.size-1).each{|i|
-		countArray[array[i].to_i] = Integer(countArray[array[i].to_i]) + 1
+		countArray[array[i].to_i] = (countArray[array[i].to_i]).to_i + 1
 	}
 
 	(0 .. 8).each{|i|

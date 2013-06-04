@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby -wKU
 
-require 'sort_util'
+require_relative 'sort_util'
 
 def enumsort(array)
 
@@ -31,7 +31,7 @@ end
 
 if __FILE__ == $0
 	
-	array = [5,3,4,8,9,11,2,10,6,7,1]
+	array = [5,3,9,4,8,9,11,2,10,6,7,5,1]
 	resultarray=enumsort(array)
 	$logger.debug("Sorted sequence is [ " + String(resultarray.join(',')) + " ]")
 

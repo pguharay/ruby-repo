@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby -wKU
 
-require 'sort_util'
+require_relative 'sort_util'
 
 def partition(array, _start, _end)
 	
-	random_index = _start + rand(_end -_start)	
+	random_index = _start + rand(_end - _start)	
 	swap_elements(array, _end, random_index)
 
 	i = _start-1

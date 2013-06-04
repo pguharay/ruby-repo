@@ -1,6 +1,6 @@
-#!/usr/bin/env ruby -wKU
+#!/usr/bin/ruby 
 
-require 'sort_util'
+require_relative 'sort_util'
 
 def max_heapify(array, index)
 	

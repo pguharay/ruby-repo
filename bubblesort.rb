@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby -wKU
 
-require 'sort_util'
+require_relative 'sort_util'
 
 def bubblesort(array)
 	for i in (array.size-1).downto(0)

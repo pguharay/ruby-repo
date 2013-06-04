@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/ruby 
 
 require 'base64'
 
@@ -6,7 +6,7 @@ class Base
 	
 	private
 		def getSocial
-			print "Social " + Base64.encode64("xxx-xx-xxxx") 
+			return "Social " + Base64.encode64("xxx-xx-xxxx") 
 		end 
 
 	protected
@@ -44,9 +44,9 @@ class FirstChild < Base
 			@age = age
 		end 
 			
-		def show
+		def to_s
 			super
-			print "Child [ id=" + String(@id) + ", name=" + String(name) + ",age=" + "#{age}" + " ]\n"
+			return "Child [ id=" + String(@id) + ", name=" + String(name) + ",age=" + "#{age}" + " ]"
 		end
 
 		def age
@@ -60,11 +60,11 @@ end
 
 if __FILE__ == $0
 
-	fChild = FirstChild.new(5,"Pratik")
-	fChild.show
-
+	fChild = FirstChild.new(id=5,name="Pratik")
+	print String(fChild.to_s) + " : " + String(fChild.getSocial)
+	
 	fChild.name="Krishnarpita"
-	fChild.show
-	print fChild.id
+	print fChild.to_s
+
 
 end 

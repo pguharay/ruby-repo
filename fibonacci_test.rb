@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 
 require 'test/unit'
-require 'fibonacci'
+require_relative 'fibonacci'
 
 class Fibonacci_test < Test::Unit::TestCase
   

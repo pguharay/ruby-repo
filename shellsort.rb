@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby -wKU
 
-require 'sort_util'
+require_relative 'sort_util'
 
 def shellsort(array)
 	gap = array.size >> 1
